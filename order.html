@@ -1,0 +1,151 @@
+<html>
+<head>
+<title> Login Page </title>
+<link rel="stylesheet" href="style.css">
+<style>
+    * {
+        font-size: x-large;
+        /*background-image: url("C:\\Users\\perei\\Downloads\\art-7537962_1280.jpg");*/
+    }
+     
+    h2 {
+        color: #D15076;
+    }
+    
+    label, p {
+        color: #DB7998;
+    }
+
+    span {
+        color: black;
+    }
+
+    .pseudo:hover {
+        background-color: #DB7998;
+    }
+
+
+</style>
+</head>
+<body align="center" style="margin:50px;">
+<h2><u><b> ORDER FORM </b></u></h2>
+<br><br>
+<form action="insert.php" method="post">
+<label> Name: </label>
+<input type="text" name="name">
+
+<br><br>
+
+<label> Email: </label>
+<input type="text" name="email">
+
+<br><br>
+
+<label>Select Order category</label>
+<select name="category" onchange="Fun(this)">
+<option>Select category</option>
+<option value="books" default="">Books</option>
+<option value="bath">Bath and Beauty</option>
+<option value="food">Food</option>
+</select> <br><br>
+
+<div hidden id="options1">
+    <input type="radio" name="order" onclick="func(500)" value="Fantasy Novels Box" custom="500" data-price="500">&nbsp; Fantasy Novels Box &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(500)" value="The Classics">&nbsp; The Classics &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(550)" value="Partners in Crime">&nbsp; Partners in Crime
+    <input type="radio" name="order" onclick="func(650)" value="Lovebound Reads">&nbsp; Lovebound Reads
+    <br>
+    <input type="radio" name="order" onclick="func(350)" value="The Enigmas">&nbsp; The Enigmas &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(350)" value="Cosmic Chronicles">&nbsp; Cosmic Chronicles &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(530)" value="Adventures in YA">&nbsp; Adventures in YA &nbsp; &nbsp;
+    <input type="radio" name="order" onclick="func(480)" value="Dread Reads">&nbsp; Dread Reads &nbsp; &nbsp;
+</div>
+
+<div hidden id="options2">
+    <input type="radio" name="order" onclick="func(600)" value="180 Degree Self-care Box">&nbsp; 180 Degree Self-care Box &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(620)" value="ShowerBox">&nbsp; ShowerBox &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(650)" value="Bath Bombs">&nbsp; Bath Bombs &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(750)" value="K-Beauty Box">&nbsp; K-Beauty Box &nbsp; &nbsp; 
+    <br>
+    <input type="radio" name="order" onclick="func(700)" value="Pink Sugar Box">&nbsp; Pink Sugar Box &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(500)" value="TheraBox">&nbsp; TheraBox &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(500)" value="Soapy Paradise">&nbsp; Soapy Paradise &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(450)" value="Scent Club">&nbsp; Scent Club &nbsp; &nbsp; 
+</div>
+
+<div hidden id="options3">
+    <input type="radio" name="order" onclick="func(300)" value="BakeBox">&nbsp; BakeBox &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(500)" value="BrownieBox">&nbsp; BrownieBox &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(470)" value="Candy Time">&nbsp; Candy Time &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(400)" value="Desserts Box">&nbsp; Desserts Box &nbsp; &nbsp; 
+    <br>
+    <input type="radio" name="order" onclick="func(750)" value="ExoticFoods">&nbsp; ExoticFoods &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(630)" value="Macarons box">&nbsp; Macarons box &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(400)" value="Nutsy">&nbsp; Nutsy &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(350)" value="SnackSack">&nbsp; SnackSack &nbsp; &nbsp; 
+    <input type="radio" name="order" onclick="func(450)" value="Simplicity Teas">&nbsp; Simplicity Teas &nbsp; &nbsp;
+</div>
+<br>
+
+<p>Price: <input type="number" id="demo1" name="price" readonly></input></p>
+
+<br><br>
+<label>Select Order type</label>
+<select name="type">
+<option value="once" default="">One-time order</option>
+<option value="biweekly">Bi-weekly</option>
+<option value="monthly">Monthly</option>
+</select> <br>
+
+<br><br>
+<input type="submit" class="pseudo"> &nbsp;
+<input type="reset" class="pseudo"> <br><br>
+<a href="home1.html">Home</a>
+</form>
+
+
+<script type="text/javascript">
+    function Fun(dd)
+    {
+        var ind=dd.options[dd.selectedIndex].value;
+
+        if(ind=='books')
+        {
+            const parentb=document.getElementById("options2");
+            parentb.hidden=true;
+            const parentc=document.getElementById("options3");
+            parentc.hidden=true;
+            const parenta=document.getElementById("options1");
+            parenta.hidden=false;            
+        }   
+        else if(ind=='bath')
+        {
+            const parenta=document.getElementById("options1");
+            parenta.hidden=true;
+            const parentc=document.getElementById("options3");
+            parentc.hidden=true;
+            const parentb=document.getElementById("options2");
+            parentb.hidden=false;
+        }  
+        else if(ind=='food')
+        {
+            const parenta=document.getElementById("options1");
+            parenta.hidden=true;
+            const parentb=document.getElementById("options2");
+            parentb.hidden=true;
+            const parentc=document.getElementById("options3");
+            parentc.hidden=false;
+        }
+    }
+
+    function func(price)
+    {
+            const pri=document.getElementById("demo1");
+            pri.value=price;
+    }
+    
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            font-size: x-large;
+            /*background-image: url("C:\\Users\\perei\\Downloads\\art-7537962_1280.jpg");*/
+        }
+
+        body {
+            margin-top: 50px;
+        }
+         
+        h1 {
+            color: #D15076;
+            font-size: 30px;
+        }
+        
+        label {
+            color: #DB7998;
+        }
+    
+        .pseudo:hover {
+            background-color: #DB7998;
+        }
+    
+    
+    </style>
+</head>
+    <body>
+        <center>
+        <h1>Delete an order</h1>
+        <br>
+        <form action="delete.php" method = "post">
+            Enter the name of the box to be deleted: <input type = "text" name="delname">
+            <br/><br/>
+            <input class="pseudo" type = "submit" value = "Submit"> &nbsp;
+            <input class="pseudo" type = "reset" value = "Reset">
+        </form>
+    </center>
+</body>
+</html>

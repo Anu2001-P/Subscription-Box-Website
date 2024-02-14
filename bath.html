@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #F2E7DC;
+        }
+        #header {
+            background: #5ab9a7;
+            box-shadow: 0 5px 15px #037171;
+        }
+        #navbar li a {
+            color: #04786c;
+        }
+
+        h1 {
+            text-align: center;
+            color: #05514c;
+            font-size: 50px;
+        }
+        
+        .prod1 {
+            width: 23%;
+            height: 370px;
+            min-width: 250px;
+            padding: 10px 12px;
+            border: 1px solid #04786c;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 15px 0;
+            transition: 0.2s ease;
+            position: relative;
+        }
+
+        .prod1:hover {
+            box-shadow: 5px 5px 5px #b8d8d2;
+        }
+
+        .prod1 img {
+            width: 100%;
+            height: 230px;
+            border-radius: 20px;
+        }
+
+        des1 {
+            text-align: start;
+            padding: 10px 0;
+        }
+        h3 {
+            padding: 5px 5px;
+            text-align: center;
+        }
+
+        h4 {
+            padding-top: 7px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #05514c;
+        }
+        .cart {
+            position: absolute;
+            right: 20px; 
+            top: 328px;
+            height: 30px;
+            width: 75px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        .bookscontainer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            flex-wrap: wrap;
+            margin: 30px;
+        }
+       
+    </style>
+</head>
+<body>
+    <section id="header">
+        <img src="images/logo.png" width="110px" height="45px" class="logo">
+        <div>
+            <ul id="navbar">
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="home.html">Sign Up</a></li>
+                <li><a href="cart.php">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    <br><br>
+    </section>
+    <br><br>
+    
+        <h1 style="text-align: center;">Bath and Beauty products</h1>
+
+        <section class="bookscontainer">
+        <div class="prod1">
+            <img src="images/bath/180.png">
+            <div class="des1">
+                <h3>180 Degree Self-care Box</h3>
+                <span>Unique selfcare for your beautiful mind, body and soul to delight, pamper, & discover monthly.</span>
+                <div>
+                    <h4>600 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <img src="images/bath/bath.png">
+            <div class="des1">
+                <h3>ShowerBox</h3>
+                <span>Artisan, natural and essential oil-based bath and body products to transform your bath into a Sanctuary.</span>
+                <div>
+                    <h4>620 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <img src="images/bath/goodies.png">
+            <div class="des1">
+                <h3>Bath Bombs</h3>
+                <span>A subscription box full of carefully curated bath and body goodness delivered monthly.</span>
+                <div>
+                    <h4>650 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <img src="images/bath/kbeauty.png">
+            <div class="des1">
+                <h3>K-Beauty Box</h3>
+                <span>K-Beauty sheet mask and skincare subscription box that offers three different plans. </span>
+                <div>
+                    <h4>750 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <img src="images/bath/pinksugar.png">
+            <div class="des1">
+                <h3>Pink Sugar Box</h3>
+                <span>A subscription box for all women who love fun, trendy and cool lifestyle items.</span>
+                <div>
+                    <h4>700 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <img src="images/bath/selfcare.png">
+            <div class="des1">
+                <h3>TheraBox</h3>
+                <span>Experience self-love & happiness through therapist curated products that reduce stress & enhance your life!</span>
+                <div>
+                    <h4>500 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <img src="images/bath/soap.jpg">
+            <div class="des1">
+                <h3>Soapy Paradise</h3>
+                <span>We offer a chance for you to sit back, relax and let the day go away with soaps of various flavours and scents</span>
+                <div>
+                    <h4>500 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <img src="images/bath/perfume.png">
+            <div class="des1">
+                <h3>Scent Club</h3>
+                <span>Clean consciously crafted fragrances that celebrate wild freedom, rebellious spirits and fierce dreamers.</span>
+                <div>
+                    <h4>450 \-</h4>
+                    <button class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br><br><br>
+    <br><br>
+    <br><br><br><br><br><br>
+    <section id="banner">
+        <form>
+            <h4>20% off on your first box</h4>
+            <br>
+            <input type="email" placeholder="Enter your email to sign up"> &nbsp; &nbsp;
+            <button>Sign Up</button>
+        </form>
+    </section>
+</body>

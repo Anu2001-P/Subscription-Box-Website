@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #F2E7DC;
+        }
+        #header {
+            background: #5ab9a7;
+            box-shadow: 0 5px 15px #037171;
+        }
+        #navbar li a {
+            color: #04786c;
+        }
+
+        h1 {
+            text-align: center;
+            color: #05514c;
+            font-size: 50px;
+        }
+        
+        .prod1 {
+            width: 23%;
+            height: 500px;
+            min-width: 250px;
+            padding: 10px 12px;
+            border: 1px solid #04786c;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 15px 0;
+            transition: 0.2s ease;
+            position: relative;
+        }
+
+        .prod1:hover {
+            box-shadow: 5px 5px 5px #b8d8d2;
+        }
+
+        .prod1 img {
+            width: 100%;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        h3 {
+            padding: 5px 5px;
+            text-align: center;
+        }
+
+        h4 {
+            padding-top: 7px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #05514c;
+        }
+        .cart {
+            position: absolute;
+            right: 20px; 
+            top: 450px;
+            height: 30px;
+            width: 75px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        .bookscontainer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        button:hover {
+            background: #088178;
+            color: white;
+        }
+
+        #banner button:hover {
+            background: #088178;
+            color: white;
+        }
+
+        #prodetails {
+            display: flex;
+            margin-top: 30px;
+        }
+
+    #prodetails .single-pro-image{
+        width: 30%;
+      margin-left: 50px;
+      margin-right: 40px;
+    }
+
+    #prodetails .single-pro-details{
+      width: 50%;
+      padding-top: 40px;
+      margin-top: 0px;
+    }
+
+
+  .single-pro-image img {
+      border-radius: 15%;
+      width: 100%;
+  }
+
+  .single-pro-details h4 {
+      padding: 40px 0 20px 0;
+  }
+
+  .single-pro-details h2{
+      font-size: 26px;
+  }
+
+  .single-pro-details select {
+      display: block;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+
+  }
+
+  .single-pro-details span {
+      line-height: 25px;
+      font-size: 18px;
+  }
+       
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="header">
+        <img src="images/logo.png" width="110px" height="45px" class="logo">
+        <div>
+            <ul id="navbar">
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.php">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    <br><br>
+    </section>
+    <br><br>
+    
+        <h1 style="text-align: center;">Books</h1>
+
+        <section class="bookscontainer">
+        
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/fantasy.jpg" onclick="showIMG('images/fantasy.jpg','Fantasy Novels Box','500/-','Get a giftbox of 3 masterpieces of fantasy and fiction. Includes bookmark and a candle. Fantasy novels transport readers to enchanting realms filled with magic, mythical creatures, and epic adventures. They ignite the imagination and offer an escape from reality into fantastical worlds where anything is possible.')"></a>
+            <div class="des1">
+                <h3>Fantasy Novels Box</h3>
+                <span>Get a giftbox of 3 masterpieces of fantasy and fiction. Includes bookmark and a candle</span>
+                <div>
+                    <h4>500 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/classics.jpg" onclick="showIMG('images/classics.jpg','The Classics','500/-','Travel to a time of tragic love stories and poetic deaths with this box of literary treasures. Old and classic books hold a timeless charm that continues to captivate readers across generations. These literary treasures, often written decades or even centuries ago, have a profound impact on our understanding of history, culture, and the human condition. They are windows into the past, offering insights and perspectives that remain relevant today.')"></a>
+            <div class="des1">
+                <h3>The Classics</h3>
+                <span>Travel to a time of tragic love stories and poetic deaths with this box of literary treasures </span>
+                <div>
+                    <h4>500 \-</h4>
+                    <button  class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/crime2.jpg" onclick="showIMG('images/crime2.jpg','Partners in Crime', '550 \-','Dive into a world of suspenseful narratives and intricate puzzles. Comes with a puzzle. Crime novels have an enduring appeal that enthralls readers with their suspenseful narratives, intricate puzzles, and exploration of the darker aspects of human nature. These thrilling stories often revolve around crimes, investigations, and the pursuit of justice, captivating readers with their twists, turns, and unexpected revelations.')"></a>
+            <div class="des1">
+                <h3>Partners in Crime</h3>
+                <span>Dive into a world of suspenseful narratives and intricate puzzles. Comes with a puzzle</span>
+                <div>
+                    <h4>550 \-</h4>
+                    <button class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/romance.jpg" onclick="showIMG('images/romance.jpg','Lovebound Reads','650 /-','Celebrate the complexities of human relationships and the transformative power of love. Romance novels are beloved for their ability to transport readers into a world of love, passion, and emotional connection. These stories celebrate the complexities of human relationships, exploring themes of desire, longing, and the transformative power of love. They capture the excitement of new beginnings, the joy of finding a soulmate, and the challenges that couples must overcome to achieve their happily-ever-after.')"></a>
+            <div class="des1">
+                <h3>Lovebound Reads</h3>
+                <span> Celebrate the complexities of human relationships and the transformative power of love.</span>
+                <div>
+                    <h4>650 \-</h4>
+                    <button class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/mystery2.jpg" onclick="showIMG('images/mystery2.jpg','The Enigmas','350 /-','Get wrapped up in a captivating blend of suspense in novels ranging from psychological thrillers to cozy mysteries. These stories often revolve around a central mystery. Authors like Agatha Christie, Raymond Chandler, and Gillian Flynn have left an indelible mark on the genre, crafting unforgettable characters and intricate plots that keep readers guessing until the final revelation.')"></a>
+            <div class="des1">
+                <h3>The Enigmas</h3>
+                <span>Get wrapped up in a captivating blend of suspense in novels ranging from psychological thrillers to cozy mysteries</span>
+                <div>
+                    <h4>350 \-</h4>
+                    <button class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/scifi.jpg" onclick="showIMG('images/scifi.jpg','Cosmic Chronicles','350 /-','Sci-fi novels transport readers to imaginative worlds where science, technology, and the boundless possibilities of the future take center stage. These captivating stories explore the impact of scientific advancements on society, challenge our understanding of reality, and delve into profound questions about humanity\'s place in the universe. Sci-fi novels span a wide range of subgenres, from space operas and dystopian futures to time travel adventures and cyberpunk tales.')"></a>
+            <div class="des1">
+                <h3>Cosmic Chronicles</h3>
+                <span>Sci-fi novels transport readers to imaginative worlds where science and technology of the future take center stage. </span>
+                <div>
+                    <h4>350 \-</h4>
+                    <button class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/youngadult.jpg" onclick="showIMG('images/youngadult.jpg','Adventures in YA','530 /-','YA novels cover a wide range of genres, including fantasy, romance, dystopian fiction, contemporary fiction, and more. They tackle important themes such as self-discovery, identity, friendship, first love, personal growth, and social issues. Popular YA authors such as John Green, Sarah J. Maas, Angie Thomas, and Rainbow Rowell have created impactful stories that have resonated with readers of all ages. YA novels leave a lasting impression, making them a beloved genre in the literary world.')"></a>
+            <div class="des1">
+                <h3>Adventures in YA</h3>
+                <span>Follow young protagonists as they face coming-of-age struggles and embark on transformative journeys.</span>
+                <div>
+                    <h4>530 \-</h4>
+                    <button class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    
+
+        <div class="prod1">
+            <a href="#prodetails"><img src="images/horror.png" onclick="showIMG('images/horror.png','Dread Reads','480 /-','Horror novels span a wide range of subgenres, including psychological horror, supernatural horror, gothic horror, and more. They tap into our deepest fears, often featuring eerie atmospheres, suspenseful pacing, and unexpected twists that keep readers on the edge of their seats. Contains books from renowned authors like Stephen King, Shirley Jackson, H.P. Lovecraft, and Edgar Allan Poe ')"></a>
+            <div class="des1">
+                <h3>Dread Reads</h3>
+                <span>Delve into the realms of fear and darkness, with these spine-chilling tales that send shivers down your spines.</span>
+                <div>
+                    <h4>480 \-</h4>
+                    <button class="cart" onclick="document.location.href='order.html'">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="banner">
+        <form>
+            <h4>20% off on your first box</h4>
+            <br>
+            <input type="email" placeholder="Enter your email to sign up"> &nbsp; &nbsp;
+            <button>Sign Up</button>
+        </form>
+    </section>
+
+    <br><br><br>
+    <br><br>
+    <br><br><br><br><br><br>
+    <section id="prodetails">
+        <div class="single-pro-image">
+
+        </div>
+
+        <div class="single-pro-details">
+            <h5>Home/Books</h5>
+            <h4 id="pro_title"></h4>
+            <h2 id="cost"></h2>
+             <br>
+            <button onclick="document.location.href='order.html'">Add to cart</button> <br><br>
+            <span id="text"></span>
+        </div>
+    </section>
+    <br><br><br><br><br><br>
+    
+</body>
